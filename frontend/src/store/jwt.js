@@ -28,8 +28,6 @@ async function jwtFetch(url, options = {}) {
   return res;
 }
 
-export default jwtFetch;
-
 function getCookie(cookieName) {
   const cookies = document.cookie.split(";");
   for (let cookie of cookies) {
@@ -38,3 +36,5 @@ function getCookie(cookieName) {
   }
   return null;
 }
+
+export default jwtFetch;
