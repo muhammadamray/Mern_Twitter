@@ -15,6 +15,8 @@ export const AuthRoute = ({ component: Component, path, exact }) => {
   );
 };
 
+// easy way to throw in props
+
 export const ProtectedRoute = ({ component: Component, ...rest }) => {
   const loggedIn = useSelector((state) => !!state.session.user);
 
